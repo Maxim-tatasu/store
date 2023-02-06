@@ -1,0 +1,7 @@
+2023-02-05 15:52:07 - PHP Warning:  ftp_chdir(): CWD failed. &quot;/C:/openserver/domains&quot;: directory not found. in C:\OpenServer\domains\store\upload\admin\controller\extension\installer.php on line 298
+2023-02-05 15:53:34 - PHP Warning:  ftp_chdir(): CWD failed. &quot;/C:/openserver/domains/store&quot;: directory not found. in C:\OpenServer\domains\store\upload\admin\controller\extension\installer.php on line 298
+2023-02-05 15:54:52 - PHP Warning:  ftp_chdir(): CWD failed. &quot;/C:/openserver/domains/store&quot;: directory not found. in C:\OpenServer\domains\store\upload\admin\controller\extension\installer.php on line 298
+2023-02-05 15:56:19 - PHP Warning:  ftp_chdir(): CWD failed. &quot;/C:/openserver/domains/store&quot;: directory not found. in C:\OpenServer\domains\store\upload\admin\controller\extension\installer.php on line 298
+2023-02-05 15:56:54 - PHP Warning:  ftp_chdir(): CWD failed. &quot;/C:/openserver/domains/store&quot;: directory not found. in C:\OpenServer\domains\store\upload\admin\controller\extension\installer.php on line 298
+2023-02-05 16:02:13 - PHP Warning:  ftp_chdir(): CWD failed. &quot;/C:/openserver/domains/store/upload&quot;: directory not found. in C:\OpenServer\domains\store\upload\admin\controller\extension\installer.php on line 298
+2023-02-05 16:03:38 - PHP Warning:  ftp_chdir(): CWD failed. &quot;/C:/openserver/domains/store/upload&quot;: directory not found. in C:\OpenServer\domains\store\upload\admin\controller\extension\installer.php on line 298

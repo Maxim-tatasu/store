@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <name>AVARON © Сортировка по наличию и по дате добавления в магазин</name>
+    <code>AVARON © Сортировка по наличию и по дате добавления в магазин</code>
+    <version>1.0.5 oc2-oc3 Default</version>
+    <link>https://avaron.su/software</link>
+    <author>Aleksandr Ivanyuk</author>
+
+
+
+    <file path="catalog/language/ru-ru/product/{category,manufacturer,search,special}.php">
+        <operation error="skip">
+            <search><![CDATA[// Text]]></search>
+            <add position="after"><![CDATA[
+                $_['text_date_added_up']           = 'Новинки в начале';
+                $_['text_date_added_down']         = 'Новинки в конце';
+                $_['text_products_in_stock_first'] = 'По наличию';
+            ]]></add>
+        </operation>
+    </file>
+    <file path="catalog/language/ru/product/{category,manufacturer,search,special}.php">
+        <operation error="skip">
+            <search><![CDATA[// Text]]></search>
+            <add position="after"><![CDATA[
+                $_['text_date_added_up']           = 'Новинки в начале';
+                $_['text_date_added_down']         = 'Новинки в конце';
+                $_['text_products_in_stock_first'] = 'По наличию';
+            ]]></add>
+        </operation>
+    </file>
+    <file path="catalog/language/russian/product/{category,manufacturer,search,special}.php">
+        <operation error="skip">
+            <search><![CDATA[// Text]]></search>
+            <add position="after"><![CDATA[
+                $_['text_date_added_up']           = 'Новинки в начале';
+                $_['text_date_added_down']         = 'Новинки в конце';
+                $_['text_products_in_stock_first'] = 'По наличию';
+            ]]></add>
+        </operation>
+    </file>
+    <file path="catalog/language/russia/product/{category,manufacturer,search,special}.php">
+        <operation error="skip">
+            <search><![CDATA[// Text]]></search>
+            <add position="after"><![CDATA[
+                $_['text_date_added_up']           = 'Новинки в начале';
+                $_['text_date_added_down']         = 'Новинки в конце';
+                $_['text_products_in_stock_first'] = 'По наличию';
+            ]]></add>
+        </operation>
+    </file>
+    <file path="catalog/language/uk-ua/product/{category,manufacturer,search,special}.php">
+        <operation error="skip">
+            <search><![CDATA[// Text]]></search>
+            <add position="after"><![CDATA[
+                $_['text_date_added_up']           = 'Новинки на початку';
+                $_['text_date_added_down']         = 'Новинки в кінці';
+                $_['text_products_in_stock_first'] = 'В наявностi';
+            ]]></add>
+        </operation>
+    </file>
+    <file path="catalog/language/en-gb/product/{category,manufacturer,search,special}.php">
+        <operation error="skip">
+            <search><![CDATA[// Text]]></search>
+            <add position="after"><![CDATA[
+                $_['text_date_added_up']           = 'New products at the start';
+                $_['text_date_added_down']         = 'New products at the end';
+                $_['text_products_in_stock_first'] = 'Products in stock';
+            ]]></add>
+        </operation>
+    </file>
+
+
+<!-- START По умолчанию НОВИНКИ В НАЧАЛЕ -->
+    <!-- Раскомментировать или закомментировать при необходимости данного функционала -->
+<!--
+    <file path="catalog/controller/product/{category,manufacturer,search,special}.php">
+        <operation error="skip">
+          <search><![CDATA[$sort = 'p.sort_order';]]></search>
+          <add position="replace"><![CDATA[$sort = 'p.date_added';]]></add>
+        </operation>
+        <operation error="skip">
+          <search><![CDATA[$order = 'ASC';]]></search>
+          <add position="replace"><![CDATA[$order = 'DESC';]]></add>
+        </operation>
+    </file>   
+-->
+<!-- END По умолчанию НОВИНКИ В НАЧАЛЕ -->
+
+<!-- START По умолчанию НАЗВАНИЕ (А-Я) -->
+    <!-- Раскомментировать или закомментировать при необходимости данного функционала -->
+<!--
+    <file path="catalog/controller/product/{category,manufacturer,search,special}.php">
+        <operation error="skip">
+          <search><![CDATA[$sort = 'p.sort_order';]]></search>
+          <add position="replace"><![CDATA[$sort = 'pd.name';]]></add>
+        </operation>
+    </file>   
+-->
+<!-- END По умолчанию НАЗВАНИЕ (А-Я) -->
+
+
+<!-- START По умолчанию НАЗВАНИЕ (Я-А) -->
+    <!-- Раскомментировать или закомментировать при необходимости данного функционала -->
+<!--
+    <file path="catalog/controller/product/{category,manufacturer,search,special}.php">
+        <operation error="skip">
+          <search><![CDATA[$sort = 'p.sort_order';]]></search>
+          <add position="replace"><![CDATA[$sort = 'pd.name';]]></add>
+        </operation>
+        <operation error="skip">
+          <search><![CDATA[$order = 'ASC';]]></search>
+          <add position="replace"><![CDATA[$order = 'DESC';]]></add>
+        </operation>
+    </file>   
+-->
+<!-- END По умолчанию НАЗВАНИЕ (Я-А) -->
+
+
+
+
+
+    <file path="catalog/controller/product/category.php">
+        <operation error="skip">
+            <search><![CDATA['text'  => $this->language->get('text_default'),]]></search>
+            <add position="replace"><![CDATA['text'  => $this->language->get('text_products_in_stock_first'),]]></add>
+        </operation>
+        <operation error="skip">
+            <search><![CDATA[$data['sorts'] = array();]]></search>
+            <add position="after" offset="6"><![CDATA[
+                $data['sorts'][] = array(
+                    'text'  => $this->language->get('text_date_added_up'),
+                    'value' => 'p.date_added-DESC',
+                    'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.date_added&order=DESC' . $url)
+                );
+                $data['sorts'][] = array(
+                    'text'  => $this->language->get('text_date_added_down'),
+                    'value' => 'p.date_added-ASC',
+                    'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.date_added&order=ASC' . $url)
+                );
+            ]]></add>
+        </operation>
+    </file>
+    <file path="catalog/controller/product/manufacturer.php">
+        <operation error="skip">
+            <search><![CDATA['text'  => $this->language->get('text_default'),]]></search>
+            <add position="replace"><![CDATA['text'  => $this->language->get('text_products_in_stock_first'),]]></add>
+        </operation>
+        <operation error="skip">
+            <search><![CDATA[$data['sorts'] = array();]]></search>
+            <add position="after" offset="6"><![CDATA[
+                $data['sorts'][] = array(
+                    'text'  => $this->language->get('text_date_added_up'),
+                    'value' => 'p.date_added-DESC',
+                    'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=p.date_added&order=DESC' . $url)
+                );
+                $data['sorts'][] = array(
+                    'text'  => $this->language->get('text_date_added_down'),
+                    'value' => 'p.date_added-ASC',
+                    'href'  => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . '&sort=p.date_added&order=ASC' . $url)
+                );
+            ]]></add>
+        </operation>
+    </file>
+    <file path="catalog/controller/product/search.php">
+        <operation error="skip">
+            <search><![CDATA['text'  => $this->language->get('text_default'),]]></search>
+            <add position="replace"><![CDATA['text'  => $this->language->get('text_products_in_stock_first'),]]></add>
+        </operation>
+        <operation error="skip">
+            <search><![CDATA[$data['sorts'] = array();]]></search>
+            <add position="after" offset="6"><![CDATA[
+                $data['sorts'][] = array(
+                    'text'  => $this->language->get('text_date_added_up'),
+                    'value' => 'p.date_added-DESC',
+                    'href'  => $this->url->link('product/search', '&sort=p.date_added&order=DESC' . $url)
+                );
+                $data['sorts'][] = array(
+                    'text'  => $this->language->get('text_date_added_down'),
+                    'value' => 'p.date_added-ASC',
+                    'href'  => $this->url->link('product/search', '&sort=p.date_added&order=ASC' . $url)
+                );
+            ]]></add>
+        </operation>
+    </file>
+    <file path="catalog/controller/product/special.php">
+        <operation error="skip">
+            <search><![CDATA['text'  => $this->language->get('text_default'),]]></search>
+            <add position="replace"><![CDATA['text'  => $this->language->get('text_products_in_stock_first'),]]></add>
+        </operation>
+        <operation error="skip">
+            <search><![CDATA[$data['sorts'] = array();]]></search>
+            <add position="after" offset="6"><![CDATA[
+                $data['sorts'][] = array(
+                    'text'  => $this->language->get('text_date_added_up'),
+                    'value' => 'p.date_added-DESC',
+                    'href'  => $this->url->link('product/special', '&sort=p.date_added&order=DESC' . $url)
+                );
+                $data['sorts'][] = array(
+                    'text'  => $this->language->get('text_date_added_down'),
+                    'value' => 'p.date_added-ASC',
+                    'href'  => $this->url->link('product/special', '&sort=p.date_added&order=ASC' . $url)
+                );
+           ]]></add>
+        </operation>
+    </file>
+
+
+
+
+
+    <!-- Товары НЕ В НАЛИЧИИ в конце -->
+    <file path="catalog/model/catalog/product.php">
+    
+        <!-- ПО НАЛИЧИЮ -->
+        <operation error="skip">
+          <search><![CDATA[$sql .= " ORDER BY " . $data['sort'];]]></search>
+          <add position="replace"><![CDATA[
+            if ($data['sort'] == 'p.date_added') {
+                $sql .= " ORDER BY " . $data['sort'];
+            } else {
+                $sql .= " ORDER BY (p.quantity>0) DESC," . $data['sort'];
+            }
+          ]]></add>
+        </operation>
+        
+        
+        <!-- По наименованию или цене (раскоментировать, если необходимо что бы товары НЕ В НАЛИЧИИ тоже были в конце) -->
+        <!--
+        <operation error="skip">
+          <search><![CDATA[
+            $sql .= " ORDER BY LCASE(" . $data['sort'] . ")";
+          ]]></search>
+          <add position="replace"><![CDATA[
+            $sql .= " ORDER BY (p.quantity>0) DESC, LCASE(" . $data['sort'] . ")";
+          ]]></add>
+        </operation>
+    
+        <operation error="skip">
+          <search><![CDATA[
+            $sql .= " ORDER BY (CASE WHEN special IS NOT NULL THEN special WHEN discount IS NOT NULL THEN discount ELSE p.price END)";
+          ]]></search>
+          <add position="replace"><![CDATA[
+            $sql .= " ORDER BY (p.quantity>0) DESC, (CASE WHEN special IS NOT NULL THEN special WHEN discount IS NOT NULL THEN discount ELSE p.price END)";
+          ]]></add>
+        </operation>
+        -->
+
+
+    
+        <!-- Прочее (раскоментировать, если необходимо что бы товары НЕ В НАЛИЧИИ тоже были в конце) -->
+        <!--
+        <operation error="skip">
+          <search><![CDATA[
+            $sql .= " ORDER BY p.sort_order";
+          ]]></search>
+          <add position="replace"><![CDATA[
+            $sql .= " ORDER BY (p.quantity>0) DESC, p.sort_order";
+          ]]></add>
+        </operation>
+        -->
+    
+    </file>
+
+</modification>

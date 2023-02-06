@@ -1,0 +1,805 @@
+2023-02-03 15:01:48 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: fondy_payment
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: public function index() {
+LINE: 11
+
+FILE: catalog/view/theme/default/template/checkout/checkout.tpl
+CODE: <h1><?php echo $heading_title; ?></h1>
+LINE: 26
+----------------------------------------------------------------
+MOD: OcStore 2.3.x track number
+
+FILE: admin/controller/sale/order.php
+CODE: $data['shipping_method'] = $order_info['shipping_method'];
+LINE: 567
+LINE: 942
+CODE: public function history() {
+LINE: 1545
+
+FILE: admin/model/sale/order.php
+CODE: $order_query->row['order_id'],
+LINE: 96
+
+FILE: catalog/model/checkout/order.php
+CODE: $order_query->row['order_id'],
+LINE: 170
+
+FILE: admin/view/template/sale/order_info.tpl
+CODE: <td><?php echo $text_reward; ?></td>
+LINE: 100
+CODE: <?php echo $footer; ?>
+LINE: 700
+
+FILE: catalog/model/account/order.php
+CODE: $order_query->row['order_id'],
+LINE: 46
+
+FILE: catalog/controller/account/order.php
+CODE: if ($order_info['invoice_no']) {
+LINE: 210
+
+FILE: catalog/view/theme/default/template/account/order_info.tpl
+CODE: <b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?>
+LINE: 49
+----------------------------------------------------------------
+2023-02-03 17:16:37 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: fondy_payment
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: public function index() {
+LINE: 11
+
+FILE: catalog/view/theme/default/template/checkout/checkout.tpl
+CODE: <h1><?php echo $heading_title; ?></h1>
+LINE: 26
+----------------------------------------------------------------
+MOD: OcStore 2.3.x track number
+
+FILE: admin/controller/sale/order.php
+CODE: $data['shipping_method'] = $order_info['shipping_method'];
+LINE: 567
+LINE: 942
+CODE: public function history() {
+LINE: 1545
+
+FILE: admin/model/sale/order.php
+CODE: $order_query->row['order_id'],
+LINE: 96
+
+FILE: catalog/model/checkout/order.php
+CODE: $order_query->row['order_id'],
+LINE: 170
+
+FILE: admin/view/template/sale/order_info.tpl
+CODE: <td><?php echo $text_reward; ?></td>
+LINE: 100
+CODE: <?php echo $footer; ?>
+LINE: 700
+
+FILE: catalog/model/account/order.php
+CODE: $order_query->row['order_id'],
+LINE: 46
+
+FILE: catalog/controller/account/order.php
+CODE: if ($order_info['invoice_no']) {
+LINE: 210
+
+FILE: catalog/view/theme/default/template/account/order_info.tpl
+CODE: <b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?>
+LINE: 49
+----------------------------------------------------------------
+2023-02-03 17:16:39 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: fondy_payment
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: public function index() {
+LINE: 11
+
+FILE: catalog/view/theme/default/template/checkout/checkout.tpl
+CODE: <h1><?php echo $heading_title; ?></h1>
+LINE: 26
+----------------------------------------------------------------
+MOD: OcStore 2.3.x track number
+
+FILE: admin/controller/sale/order.php
+CODE: $data['shipping_method'] = $order_info['shipping_method'];
+LINE: 567
+LINE: 942
+CODE: public function history() {
+LINE: 1545
+
+FILE: admin/model/sale/order.php
+CODE: $order_query->row['order_id'],
+LINE: 96
+
+FILE: catalog/model/checkout/order.php
+CODE: $order_query->row['order_id'],
+LINE: 170
+
+FILE: admin/view/template/sale/order_info.tpl
+CODE: <td><?php echo $text_reward; ?></td>
+LINE: 100
+CODE: <?php echo $footer; ?>
+LINE: 700
+
+FILE: catalog/model/account/order.php
+CODE: $order_query->row['order_id'],
+LINE: 46
+
+FILE: catalog/controller/account/order.php
+CODE: if ($order_info['invoice_no']) {
+LINE: 210
+
+FILE: catalog/view/theme/default/template/account/order_info.tpl
+CODE: <b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?>
+LINE: 49
+----------------------------------------------------------------
+2023-02-05 16:06:52 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: fondy_payment
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: public function index() {
+LINE: 11
+
+FILE: catalog/view/theme/default/template/checkout/checkout.tpl
+CODE: <h1><?php echo $heading_title; ?></h1>
+LINE: 26
+----------------------------------------------------------------
+MOD: OcStore 2.3.x track number
+
+FILE: admin/controller/sale/order.php
+CODE: $data['shipping_method'] = $order_info['shipping_method'];
+LINE: 567
+LINE: 942
+CODE: public function history() {
+LINE: 1545
+
+FILE: admin/model/sale/order.php
+CODE: $order_query->row['order_id'],
+LINE: 96
+
+FILE: catalog/model/checkout/order.php
+CODE: $order_query->row['order_id'],
+LINE: 170
+
+FILE: admin/view/template/sale/order_info.tpl
+CODE: <td><?php echo $text_reward; ?></td>
+LINE: 100
+CODE: <?php echo $footer; ?>
+LINE: 700
+
+FILE: catalog/model/account/order.php
+CODE: $order_query->row['order_id'],
+LINE: 46
+
+FILE: catalog/controller/account/order.php
+CODE: if ($order_info['invoice_no']) {
+LINE: 210
+
+FILE: catalog/view/theme/default/template/account/order_info.tpl
+CODE: <b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?>
+LINE: 49
+----------------------------------------------------------------
+MOD: AVARON © Сортировка по наличию и по дате добавления в магазин
+
+FILE: catalog/language/ru-ru/product/category.php
+CODE: // Text
+LINE: 6
+
+FILE: catalog/language/ru-ru/product/manufacturer.php
+CODE: // Text
+LINE: 9
+
+FILE: catalog/language/ru-ru/product/search.php
+CODE: // Text
+LINE: 10
+
+FILE: catalog/language/ru-ru/product/special.php
+CODE: // Text
+LINE: 9
+
+FILE: catalog/language/en-gb/product/category.php
+CODE: // Text
+LINE: 6
+
+FILE: catalog/language/en-gb/product/manufacturer.php
+CODE: // Text
+LINE: 9
+
+FILE: catalog/language/en-gb/product/search.php
+CODE: // Text
+LINE: 10
+
+FILE: catalog/language/en-gb/product/special.php
+CODE: // Text
+LINE: 9
+
+FILE: catalog/controller/product/category.php
+CODE: 'text'  => $this->language->get('text_default'),
+LINE: 250
+CODE: $data['sorts'] = array();
+LINE: 259
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: 'text'  => $this->language->get('text_default'),
+LINE: 256
+CODE: $data['sorts'] = array();
+LINE: 265
+
+FILE: catalog/controller/product/search.php
+CODE: 'text'  => $this->language->get('text_default'),
+LINE: 289
+CODE: $data['sorts'] = array();
+LINE: 298
+
+FILE: catalog/controller/product/special.php
+CODE: 'text'  => $this->language->get('text_default'),
+LINE: 154
+CODE: $data['sorts'] = array();
+LINE: 163
+
+FILE: catalog/model/catalog/product.php
+CODE: $sql .= " ORDER BY " . $data['sort'];
+LINE: 174
+LINE: 224
+----------------------------------------------------------------
+2023-02-05 16:08:08 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: fondy_payment
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: public function index() {
+LINE: 11
+
+FILE: catalog/view/theme/default/template/checkout/checkout.tpl
+CODE: <h1><?php echo $heading_title; ?></h1>
+LINE: 26
+----------------------------------------------------------------
+MOD: OcStore 2.3.x track number
+
+FILE: admin/controller/sale/order.php
+CODE: $data['shipping_method'] = $order_info['shipping_method'];
+LINE: 567
+LINE: 942
+CODE: public function history() {
+LINE: 1545
+
+FILE: admin/model/sale/order.php
+CODE: $order_query->row['order_id'],
+LINE: 96
+
+FILE: catalog/model/checkout/order.php
+CODE: $order_query->row['order_id'],
+LINE: 170
+
+FILE: admin/view/template/sale/order_info.tpl
+CODE: <td><?php echo $text_reward; ?></td>
+LINE: 100
+CODE: <?php echo $footer; ?>
+LINE: 700
+
+FILE: catalog/model/account/order.php
+CODE: $order_query->row['order_id'],
+LINE: 46
+
+FILE: catalog/controller/account/order.php
+CODE: if ($order_info['invoice_no']) {
+LINE: 210
+
+FILE: catalog/view/theme/default/template/account/order_info.tpl
+CODE: <b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?>
+LINE: 49
+----------------------------------------------------------------
+MOD: AVARON © Сортировка по наличию и по дате добавления в магазин
+
+FILE: catalog/language/ru-ru/product/category.php
+CODE: // Text
+LINE: 6
+
+FILE: catalog/language/ru-ru/product/manufacturer.php
+CODE: // Text
+LINE: 9
+
+FILE: catalog/language/ru-ru/product/search.php
+CODE: // Text
+LINE: 10
+
+FILE: catalog/language/ru-ru/product/special.php
+CODE: // Text
+LINE: 9
+
+FILE: catalog/language/en-gb/product/category.php
+CODE: // Text
+LINE: 6
+
+FILE: catalog/language/en-gb/product/manufacturer.php
+CODE: // Text
+LINE: 9
+
+FILE: catalog/language/en-gb/product/search.php
+CODE: // Text
+LINE: 10
+
+FILE: catalog/language/en-gb/product/special.php
+CODE: // Text
+LINE: 9
+
+FILE: catalog/controller/product/category.php
+CODE: 'text'  => $this->language->get('text_default'),
+LINE: 250
+CODE: $data['sorts'] = array();
+LINE: 259
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: 'text'  => $this->language->get('text_default'),
+LINE: 256
+CODE: $data['sorts'] = array();
+LINE: 265
+
+FILE: catalog/controller/product/search.php
+CODE: 'text'  => $this->language->get('text_default'),
+LINE: 289
+CODE: $data['sorts'] = array();
+LINE: 298
+
+FILE: catalog/controller/product/special.php
+CODE: 'text'  => $this->language->get('text_default'),
+LINE: 154
+CODE: $data['sorts'] = array();
+LINE: 163
+
+FILE: catalog/model/catalog/product.php
+CODE: $sql .= " ORDER BY " . $data['sort'];
+LINE: 174
+LINE: 224
+----------------------------------------------------------------
+2023-02-05 16:08:10 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: fondy_payment
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: public function index() {
+LINE: 11
+
+FILE: catalog/view/theme/default/template/checkout/checkout.tpl
+CODE: <h1><?php echo $heading_title; ?></h1>
+LINE: 26
+----------------------------------------------------------------
+MOD: OcStore 2.3.x track number
+
+FILE: admin/controller/sale/order.php
+CODE: $data['shipping_method'] = $order_info['shipping_method'];
+LINE: 567
+LINE: 942
+CODE: public function history() {
+LINE: 1545
+
+FILE: admin/model/sale/order.php
+CODE: $order_query->row['order_id'],
+LINE: 96
+
+FILE: catalog/model/checkout/order.php
+CODE: $order_query->row['order_id'],
+LINE: 170
+
+FILE: admin/view/template/sale/order_info.tpl
+CODE: <td><?php echo $text_reward; ?></td>
+LINE: 100
+CODE: <?php echo $footer; ?>
+LINE: 700
+
+FILE: catalog/model/account/order.php
+CODE: $order_query->row['order_id'],
+LINE: 46
+
+FILE: catalog/controller/account/order.php
+CODE: if ($order_info['invoice_no']) {
+LINE: 210
+
+FILE: catalog/view/theme/default/template/account/order_info.tpl
+CODE: <b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?>
+LINE: 49
+----------------------------------------------------------------
+MOD: AVARON © Сортировка по наличию и по дате добавления в магазин
+
+FILE: catalog/language/ru-ru/product/category.php
+CODE: // Text
+LINE: 6
+
+FILE: catalog/language/ru-ru/product/manufacturer.php
+CODE: // Text
+LINE: 9
+
+FILE: catalog/language/ru-ru/product/search.php
+CODE: // Text
+LINE: 10
+
+FILE: catalog/language/ru-ru/product/special.php
+CODE: // Text
+LINE: 9
+
+FILE: catalog/language/en-gb/product/category.php
+CODE: // Text
+LINE: 6
+
+FILE: catalog/language/en-gb/product/manufacturer.php
+CODE: // Text
+LINE: 9
+
+FILE: catalog/language/en-gb/product/search.php
+CODE: // Text
+LINE: 10
+
+FILE: catalog/language/en-gb/product/special.php
+CODE: // Text
+LINE: 9
+
+FILE: catalog/controller/product/category.php
+CODE: 'text'  => $this->language->get('text_default'),
+LINE: 250
+CODE: $data['sorts'] = array();
+LINE: 259
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: 'text'  => $this->language->get('text_default'),
+LINE: 256
+CODE: $data['sorts'] = array();
+LINE: 265
+
+FILE: catalog/controller/product/search.php
+CODE: 'text'  => $this->language->get('text_default'),
+LINE: 289
+CODE: $data['sorts'] = array();
+LINE: 298
+
+FILE: catalog/controller/product/special.php
+CODE: 'text'  => $this->language->get('text_default'),
+LINE: 154
+CODE: $data['sorts'] = array();
+LINE: 163
+
+FILE: catalog/model/catalog/product.php
+CODE: $sql .= " ORDER BY " . $data['sort'];
+LINE: 174
+LINE: 224
+----------------------------------------------------------------
+2023-02-05 16:19:20 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: fondy_payment
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: public function index() {
+LINE: 11
+
+FILE: catalog/view/theme/default/template/checkout/checkout.tpl
+CODE: <h1><?php echo $heading_title; ?></h1>
+LINE: 26
+----------------------------------------------------------------
+MOD: OcStore 2.3.x track number
+
+FILE: admin/controller/sale/order.php
+CODE: $data['shipping_method'] = $order_info['shipping_method'];
+LINE: 567
+LINE: 942
+CODE: public function history() {
+LINE: 1545
+
+FILE: admin/model/sale/order.php
+CODE: $order_query->row['order_id'],
+LINE: 96
+
+FILE: catalog/model/checkout/order.php
+CODE: $order_query->row['order_id'],
+LINE: 170
+
+FILE: admin/view/template/sale/order_info.tpl
+CODE: <td><?php echo $text_reward; ?></td>
+LINE: 100
+CODE: <?php echo $footer; ?>
+LINE: 700
+
+FILE: catalog/model/account/order.php
+CODE: $order_query->row['order_id'],
+LINE: 46
+
+FILE: catalog/controller/account/order.php
+CODE: if ($order_info['invoice_no']) {
+LINE: 210
+
+FILE: catalog/view/theme/default/template/account/order_info.tpl
+CODE: <b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?>
+LINE: 49
+----------------------------------------------------------------
+MOD: AVARON © Сортировка по наличию и по дате добавления в магазин
+
+FILE: catalog/language/ru-ru/product/category.php
+CODE: // Text
+LINE: 6
+
+FILE: catalog/language/ru-ru/product/manufacturer.php
+CODE: // Text
+LINE: 9
+
+FILE: catalog/language/ru-ru/product/search.php
+CODE: // Text
+LINE: 10
+
+FILE: catalog/language/ru-ru/product/special.php
+CODE: // Text
+LINE: 9
+
+FILE: catalog/language/en-gb/product/category.php
+CODE: // Text
+LINE: 6
+
+FILE: catalog/language/en-gb/product/manufacturer.php
+CODE: // Text
+LINE: 9
+
+FILE: catalog/language/en-gb/product/search.php
+CODE: // Text
+LINE: 10
+
+FILE: catalog/language/en-gb/product/special.php
+CODE: // Text
+LINE: 9
+
+FILE: catalog/controller/product/category.php
+CODE: 'text'  => $this->language->get('text_default'),
+LINE: 250
+CODE: $data['sorts'] = array();
+LINE: 259
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: 'text'  => $this->language->get('text_default'),
+LINE: 256
+CODE: $data['sorts'] = array();
+LINE: 265
+
+FILE: catalog/controller/product/search.php
+CODE: 'text'  => $this->language->get('text_default'),
+LINE: 289
+CODE: $data['sorts'] = array();
+LINE: 298
+
+FILE: catalog/controller/product/special.php
+CODE: 'text'  => $this->language->get('text_default'),
+LINE: 154
+CODE: $data['sorts'] = array();
+LINE: 163
+
+FILE: catalog/model/catalog/product.php
+CODE: $sql .= " ORDER BY " . $data['sort'];
+LINE: 174
+LINE: 224
+----------------------------------------------------------------
